@@ -11,6 +11,10 @@ echo "Installing plugins..."
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
+echo "Installing Starship..."
+curl -sS https://starship.rs/install.sh | sh -s -- -y
+
+
 echo "Applying config..."
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 cp "$SCRIPT_DIR/.zshrc" ~/.zshrc
