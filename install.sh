@@ -14,6 +14,8 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting ${ZSH_CUSTOM:-~/.
 echo "Installing Starship..."
 curl -sS https://starship.rs/install.sh | sh -s -- -y
 
+echo "Installing zoxide..."
+curl -sS https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | bash
 
 echo "Applying config..."
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
