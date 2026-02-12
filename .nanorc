@@ -1,0 +1,19 @@
+# Line numbers
+set linenumbers
+
+# Soft word wrapping (no hard line breaks)
+set softwrap
+
+# Tab size (4 spaces is standard)
+set tabsize 4
+set tabstospaces
+
+# Mouse support (click to place cursor)
+set mouse
+
+# Show cursor position in status bar
+set constantshow
+
+# Enable syntax highlighting for common file types
+include "/usr/share/nano/*.nanorc"
+include "/usr/share/nano/extra/*.nanorc"
